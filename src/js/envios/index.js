@@ -35,19 +35,20 @@ const datatable = new DataTable('#envios', {
         },
         {
             title: 'Nombre del Cliente',
-            data: 'usu_nombre'
+            data: 'us_nombre'
         },
-        {
-            title: 'Empleado',
-            data: 'envio_empleado'
-        },
+        
         {
             title: 'Fecha',
             data: 'envio_fecha'
         },
         {
-            title: 'Situación',
-            data: 'envio_situacion'
+            title: 'Origen',
+            data: 'origen_id'
+        },
+        {
+            title: 'Destino',
+            data: 'destino_id'
         }
     ]
 });

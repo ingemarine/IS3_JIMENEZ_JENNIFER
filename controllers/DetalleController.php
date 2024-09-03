@@ -12,7 +12,7 @@ class DetalleController
 
     public static function estadisticas(Router $router)
     {
-        $router->render('envios/estadisticas', [], 'layouts/menu');
+        $router->render('envios/estadisticas', [], 'layouts/menu'); // lo reenderice a envios
     }
 
 

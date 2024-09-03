@@ -29,6 +29,9 @@ $router->get('/envios/estadisticas', [DetalleController::class, 'estadisticas'])
 $router->get('/API/detalle/estadisticas', [DetalleController::class, 'detalleVentasAPI']);
 
 
+//DATATABLE
+
+
 //ruta mapa 
 $router->get('/mapa', [MapaController::class, 'index']);
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador

@@ -37,9 +37,19 @@
                         <ul class="dropdown-menu  dropdown-menu-dark "id="dropwdown" style="margin: 0;">
                             <!-- <h6 class="dropdown-header">Información</h6> -->
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/IS3_JIMENEZ_JENNIFER/envios/estadisticas"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Detalle Envio</a>
+                                <a class="dropdown-item nav-link text-white " href="/IS3_JIMENEZ_JENNIFER/envios/estadisticas"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Grafica Envio</a>
                             </li>
-                        
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/IS3_JIMENEZ_JENNIFER/envios/index"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Detalle Envios</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/IS3_JIMENEZ_JENNIFER/envios/mapa"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Mapa Envios</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/IS3_JIMENEZ_JENNIFER/envios/index"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Detalle Envios</a>
+                            </li>
                     
                         
                         </ul>

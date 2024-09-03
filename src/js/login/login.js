@@ -18,7 +18,7 @@ const IniciarSesion = async (e) => {
 
     try {
         const body = new FormData(formulario)
-        const url = '/IS3_JIMENEZ_JENNIFER/API/login';
+        const url = '/IS3_JIMENEZ_JENNIFER/API/login'; //direccion api login que esta en public
 
         const config = {
             method: 'POST',

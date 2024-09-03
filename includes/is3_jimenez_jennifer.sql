@@ -93,8 +93,7 @@ VALUES ('2024-08-31', 3, 4, 1, 'En bodega');
             insert into detalle_envio (detalle_envio, detalle_user,detalle_cantidad, detalle_situacion) values (2, 2,3, 1);
       insert into detalle_envio (detalle_envio, detalle_user,detalle_cantidad, detalle_situacion) values (2, 1,2, 1);
 
-
-
+--INSTERT PERMISOS
 INSERT INTO permisos (permisos_users, permisos_roles) 
 VALUES ( 1, 1);
 INSERT INTO permisos (permisos_users, permisos_roles) 
