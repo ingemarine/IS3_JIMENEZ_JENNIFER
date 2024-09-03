@@ -51,4 +51,4 @@ const datatable = new DataTable('#envios', {
         }
     ]
 });
-Buscar();
+btnActualizar.addEventListener('click', Buscar);

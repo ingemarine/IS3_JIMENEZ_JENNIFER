@@ -1,6 +1,7 @@
 import { Dropdown } from "bootstrap";
 import Chart from "chart.js/auto";
 
+
 const canvas = document.getElementById('chartVentas');
 const ctx = canvas.getContext('2d');
 const btnActualizar = document.getElementById('actualizar');
@@ -26,8 +27,6 @@ const getEstadisticas = async () => {
     const response = await fetch(url, config);
     const data = await response.json()
 
-    console.log(data)
-
     if(data){
         if(chartClientes.data.datasets[0]) {
             chartClientes.data.labels = []; 
@@ -35,8 +34,8 @@ const getEstadisticas = async () => {
             chartClientes.data.datasets[0].backgroundColor = []; 
 
             data.forEach(r => {
-                chartClientes.data.labels.push(r.us_nombre); 
-                chartClientes.data.datasets[0].data.push(r.cantidad_productos);
+                chartClientes.data.labels.push(r.users); 
+                chartClientes.data.datasets[0].data.push(r.cantidad_envio);
                 chartClientes.data.datasets[0].backgroundColor.push(generateRandomColor());
             });
         }
