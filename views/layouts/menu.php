@@ -24,14 +24,17 @@
                 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 0;">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/ejemplo/"><i class="bi bi-house-fill me-2"></i>Inicio</a>
+                        <a class="nav-link" aria-current="page" href="/IS3_JIMENEZ_JENNIFER/inicio"><i class="bi bi-house-fill me-2"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/IS3_JIMENEZ_JENNIFER/envios"><i class="bi bi-house-fill me-2"></i>Inicio</a>
                     </li>
   
                     <div class="nav-item dropdown " >
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown" href="#" data-bs-toggle="dropdown">
                             <i class="bi bi-gear me-2"></i>Buscar
                         </a>
-                        <ul class="dropdown-menu  dropdown-menu-dark "id="dropwdownRevision" style="margin: 0;">
+                        <ul class="dropdown-menu  dropdown-menu-dark "id="dropwdown" style="margin: 0;">
                             <!-- <h6 class="dropdown-header">Información</h6> -->
                             <li>
                                 <a class="dropdown-item nav-link text-white " href="/IS3_JIMENEZ_JENNIFER/estadisticas"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Detalle Envio</a>

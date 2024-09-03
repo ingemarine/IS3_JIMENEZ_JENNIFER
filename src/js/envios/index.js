@@ -5,7 +5,7 @@ import { lenguaje } from "../lenguaje";
 
 
 const Buscar = async () => {
-    const url = '/IS3_VASQUEZ_CARLOS/API/envios/buscar';
+    const url = '/IS3_JIMENEZ_JENNIFER/API/envios/buscar';
 
     const config = {
         method: 'GET'
