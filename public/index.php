@@ -24,11 +24,8 @@ $router->post('/API/login', [LoginController::class, 'loginAPI']);
 
 $router->get( '/login', [Controllers\LoginController::class, 'login']);
 
-
-
-//detalle
 // DETALLE
-$router->get('/productos/estadisticas', [DetalleController::class, 'estadisticas']);
+$router->get('/envios/estadisticas', [DetalleController::class, 'estadisticas']);
 $router->get('/API/detalle/estadisticas', [DetalleController::class, 'detalleVentasAPI']);
 
 

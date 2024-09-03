@@ -9,7 +9,7 @@
     </div>
 </div>
 <script>
-    const userRole = '<?= $_SESSION['user']['rol_nombre'] ?>';
+    const userRole = '<?= $_SESSION['user']['roles_nombre'] ?>';
 </script>
 <script src="<?=  asset('/build/js/envios/index.js' )?>" ></script>
 

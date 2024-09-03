@@ -11,7 +11,7 @@ use Model\User;
 class LoginController {
     public static function login(Router $router)
     {
-        isNotAuth();
+        //isNotAuth();
         $router->render('auth/login', [], 'layouts/layout');
     }
 
@@ -19,16 +19,16 @@ class LoginController {
     //FUNCION MENU
     public static function menu(Router $router)
     {
-        isAuth();
-        hasPermission(['LOGIN_ADMIN', 'USUARIO_ADMIN']);
+        // isAuth();
+        // hasPermission(['LOGIN_ADMIN', 'USUARIO_ADMIN']);
         $router->render('pages/menu', [], 'layouts/menu');
     }
 
     //FUNCION PARA SALIR Y CERRAR SESION 
     public static function logout()
     {
-        isAuth();
-        $_SESSION = [];
+        //isAuth();
+        // $_SESSION = [];
         session_destroy();
         header('Location: /IS3_JIMENEZ_JENNIFER/');
         exit;
@@ -36,12 +36,16 @@ class LoginController {
     public static function loginAPI()
     {
         getHeadersApi();
-        $_POST['us_email'] = filter_var($_POST['us_email'], FILTER_SANITIZE_NUMBER_INT);
+        $_POST['us_email'] = filter_var($_POST['us_email'], FILTER_VALIDATE_EMAIL);
         $_POST['us_password'] = htmlspecialchars($_POST['us_password']);
+
+  
         try {
             $usuario = new User($_POST);
 
             if ($usuario->validarUsuarioExistente()) {
+                // echo json_decode($usuario);
+                // exit;
                 $usuarioBD = $usuario->usuarioExistente();
                 //VALIDA QUE LA CONTRASEÑA ESTE CORRECTA
                 if (password_verify($_POST['us_password'], $usuarioBD['us_password'])) {
