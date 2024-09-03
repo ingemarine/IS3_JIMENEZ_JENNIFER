@@ -6,4 +6,4 @@
     </div>
 </div>
 
-<script src="<?= asset('./build/js/mapa/index.js')?>"></script>
+<script src="<?= asset('./build/js/mapa/mapa.js')?>"></script>
