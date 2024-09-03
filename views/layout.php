@@ -17,7 +17,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="/ejemplo/">
-                <img src="<?= asset('./images/cit.png') ?>" width="35px'" alt="cit" >
+                <img src="<?= asset('./images/loguito.jpg') ?>" width="50px'" alt="cit" style="border-radius: 25px;" >
                 Aplicaciones
             </a>
             <div class="collapse navbar-collapse" id="navbarToggler">
