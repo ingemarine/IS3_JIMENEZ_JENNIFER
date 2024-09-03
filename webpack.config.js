@@ -8,10 +8,10 @@ module.exports = {
     'js/auth/login' : './src/js/auth/login.js',
     'js/productos/estadisticas' : './src/js/productos/estadisticas.js',
     'js/mapa/index' : './src/js/mapa/index.js',
-'js/envios/index' : './src/js/envios/index.js',
+    'js/envios/index' : './src/js/envios/index.js',
     'js/envios/estadistica' : './src/js/envios/estadistica.js',
     'js/envios/mapa' : './src/js/envios/mapa.js',
-  },
+
 
     'js/aplicacion/index' : './src/js/aplicacion/index.js',
     'js/roles/index' : './src/js/roles/index.js',
