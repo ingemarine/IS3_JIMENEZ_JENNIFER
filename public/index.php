@@ -6,6 +6,7 @@ use MVC\Router;
 use Controllers\AppController;
 use Controllers\LoginController;
 use Controllers\DetalleController;
+use Controllers\MapaController;
 
 $router = new Router();
 $router->setBaseURL('/' . $_ENV['APP_NAME']);
@@ -30,5 +31,8 @@ $router->get( '/login', [Controllers\LoginController::class, 'login']);
 $router->get('/productos/estadisticas', [DetalleController::class, 'estadisticas']);
 $router->get('/API/detalle/estadisticas', [DetalleController::class, 'detalleVentasAPI']);
 
+
+//ruta mapa 
+$router->get('/mapa', [MapaController::class, 'index']);
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();

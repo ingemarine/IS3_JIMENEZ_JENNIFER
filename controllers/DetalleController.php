@@ -10,7 +10,7 @@ use MVC\Router;
 class DetalleController {
 
     public static function estadisticas(Router $router){
-        $router->render('productos/estadisticas');
+        $router->render('productos/estadisticas', [], 'layouts/menu');
     }
 
 
