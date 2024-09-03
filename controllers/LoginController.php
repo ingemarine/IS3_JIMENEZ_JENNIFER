@@ -45,7 +45,7 @@ class LoginController {
 
             if ($usuario->validarUsuarioExistente()) {
   
-                // $usuarioBD = $usuario->usuarioExistente();
+                $usuarioBD = $usuario->usuarioExistente();
                 //VALIDA QUE LA CONTRASEÑA ESTE CORRECTA
                 if (password_verify($_POST['us_password'], $usuarioBD['us_password'])) {
                    // session_start();

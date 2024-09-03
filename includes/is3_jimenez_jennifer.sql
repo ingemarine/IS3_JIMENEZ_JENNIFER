@@ -57,9 +57,9 @@ foreign key (permisos_users) references users (us_id)
  
 
 //INSERTS
-INSERT INTO roles (roles_nombre) VALUES ('Usuario Normal');
-INSERT INTO roles (roles_nombre) VALUES ('Usuario Administrativo');
-INSERT INTO roles (roles_nombre) VALUES ('Administrador');
+INSERT INTO roles (roles_nombre, roles_situacion) VALUES ('Usuario Normal', 1);
+INSERT INTO roles (roles_nombre, roles_situacion) VALUES ('Usuario Administrativo', 1);
+INSERT INTO roles (roles_nombre, roles_situacion) VALUES ('Administrador', 1);
 
 -- Insertar usuarios
 INSERT INTO users (us_nombre, us_email, us_password, roles_id) 
