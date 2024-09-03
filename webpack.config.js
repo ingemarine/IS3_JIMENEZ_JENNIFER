@@ -6,7 +6,7 @@ module.exports = {
     'js/app' : './src/js/app.js',
     'js/inicio' : './src/js/inicio.js',
     'js/auth/login' : './src/js/auth/login.js',
-
+    'js/productos/estadisticas' : './src/js/productos/estadisticas.js',
 
     'js/aplicacion/index' : './src/js/aplicacion/index.js',
     'js/roles/index' : './src/js/roles/index.js',

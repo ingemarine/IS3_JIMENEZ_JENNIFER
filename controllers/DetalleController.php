@@ -4,6 +4,7 @@ namespace Controllers;
 
 use Exception;
 use Model\Cliente; 
+use Model\User;
 use MVC\Router; 
 
 class DetalleController {
@@ -16,9 +17,9 @@ class DetalleController {
     public static function detalleVentasAPI(){
         try {
 
-            $sql = 'SELECT CLI_NOMBRE AS CLIENTE, SUM (DETALLE_CANTIDAD) AS CANTIDAD_PRODUCTOS FROM DETALLE_VENTA INNER JOIN CLIENTES ON DETALLE_CLIENTE = CLI_ID WHERE DETALLE_SITUACION = 1 GROUP BY CLI_NOMBRE';
+            $sql = 'SELECT US_NOMBRE AS USERS, SUM (DETALLE_CANTIDAD) AS CANTIDAD_ENVIO FROM DETALLE_ENVIO INNER JOIN USERS ON DETALLE_USER = US_ID WHERE DETALLE_SITUACION = 1 GROUP BY US_NOMBRE';
 
-            $datos = Cliente::fetchArray($sql);
+            $datos = User::fetchArray($sql);
             
             echo json_encode($datos);
         } catch (Exception $e) {
