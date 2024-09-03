@@ -6,7 +6,7 @@
         </div>
         <div class="form-group mb-3">
             <label for="us_email" class="form-label" style="font-family: 'Poppins', sans-serif; font-weight: 500; color: #6c757d;">Correo del usuario</label>
-            <input type="number" name="us_email" id="us_email" class="form-control" style="border-radius: 10px; border: 1px solid #ced4da; padding: 12px; font-size: 14px; color: #495057;">
+            <input type="text" name="us_email" id="us_email" class="form-control" style="border-radius: 10px; border: 1px solid #ced4da; padding: 12px; font-size: 14px; color: #495057;">
         </div>
         <div class="form-group mb-4">
             <label for="us_password" class="form-label" style="font-family: 'Poppins', sans-serif; font-weight: 500; color: #6c757d;">Password</label>
